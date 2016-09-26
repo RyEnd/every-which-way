@@ -19,3 +19,7 @@ tracks there are tests to ensure that the same name is never used twice.
 ## Source
 
 A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)
+
+## Submitting Incomplete Problems
+It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
