@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GigasecondTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-27T00:01:33" hostname="Ryan-Thinkpad" time="0.046">
+  <properties/>
+  <testcase name="beforeEpochTime" classname="GigasecondTest" time="0.042"/>
+  <testcase name="afterEpochTime" classname="GigasecondTest" time="0.001"/>
+  <testcase name="modernTime" classname="GigasecondTest" time="0.001"/>
+  <testcase name="withFullTimeSpecifiedAndDayRollover" classname="GigasecondTest" time="0.0"/>
+  <testcase name="withFullTimeSpecified" classname="GigasecondTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
