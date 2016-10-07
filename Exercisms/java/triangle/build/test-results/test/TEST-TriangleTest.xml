@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TriangleTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2016-10-06T20:35:09" hostname="USS-RyEnd" time="0.006">
+  <properties/>
+  <testcase name="scaleneTrianglesHaveNoEqualSidesAtLargerScaleEither" classname="TriangleTest" time="0.001"/>
+  <testcase name="scaleneTrianglesHaveNoEqualSidesInDescendingOrderEither" classname="TriangleTest" time="0.0"/>
+  <testcase name="isoscelesTrianglesHaveFirstAndLastSidesEqual" classname="TriangleTest" time="0.0"/>
+  <testcase name="isoscelesTrianglesHaveLastTwoSidesEqual" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesViolatingTriangleInequalityAreIllegal3" classname="TriangleTest" time="0.001"/>
+  <testcase name="isoscelesTrianglesHaveTwoFirstSidesEqual" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesWithNegativeSidesAreIllegal" classname="TriangleTest" time="0.001"/>
+  <testcase name="trianglesViolatingTriangleInequalityAreIllegal" classname="TriangleTest" time="0.0"/>
+  <testcase name="isoscelesTrianglesHaveInFactExactlyTwoSidesEqual" classname="TriangleTest" time="0.0"/>
+  <testcase name="largerEquilateralTrianglesAlsoHaveEqualSides" classname="TriangleTest" time="0.0"/>
+  <testcase name="equilateralTriangleHaveEqualSides" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesViolatingTriangleInequalityAreIllegal2" classname="TriangleTest" time="0.0"/>
+  <testcase name="verySmallTrianglesAreLegal" classname="TriangleTest" time="0.001"/>
+  <testcase name="scaleneTrianglesHaveNoEqualSides" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesWithNoSizeAreIllegal" classname="TriangleTest" time="0.0"/>
+  <system-out><![CDATA[That can't be no triangle!
+That can't be no triangle!
+That can't be no triangle!
+That can't be no triangle!
+That can't be no triangle!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
