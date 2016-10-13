@@ -4,7 +4,6 @@ app/**/*.map
 node_modules
 jspm_packages
 bower_components
-<<<<<<< HEAD
 /GapDefier/nbproject/private/
 /GapDefier/build/
 /GapDefier/target/
@@ -12,6 +11,4 @@ bower_components
 /GapApp/nbproject/
 /GapApp/target/
 /webdev/dropwizardRestAPI/target/
-=======
 /webdev/DWGettingStarted/target/
->>>>>>> dropwizard-DZone
