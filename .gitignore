@@ -12,3 +12,5 @@ bower_components
 /GapApp/target/
 /webdev/dropwizardRestAPI/target/
 /webdev/DWGettingStarted/target/
+/webdev/dropwizard-angular-webapp/dw-server/angularjs-webapp/target/
+/webdev/dropwizard-angular-webapp/dw-server/dw-server/target/
