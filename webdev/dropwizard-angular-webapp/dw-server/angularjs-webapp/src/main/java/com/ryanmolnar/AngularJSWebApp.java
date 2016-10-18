@@ -41,7 +41,7 @@ public class AngularJSWebApp {
         //allow your application to replace non-server libraries that are part of the
         //container. Setting parent loader priority to true changes this behavior.
         //Read more here: http://wiki.eclipse.org/Jetty/Reference/Jetty_Classloading
-        root.setParentLoaderPriority(true);
+        // root.setParentLoaderPriority(true);
         
         server.setHandler(root);
         

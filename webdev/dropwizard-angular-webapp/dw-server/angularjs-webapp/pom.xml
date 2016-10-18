@@ -65,7 +65,7 @@
                     <assembleDirectory>target</assembleDirectory> 
                     <programs>
                         <program>
-                            <mainClass>no.kodemaker.ps.AnguarJSWebApp</mainClass>
+                            <mainClass>com.ryanmolnar.AngularJSWebApp</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>
