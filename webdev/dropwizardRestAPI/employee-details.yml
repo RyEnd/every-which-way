@@ -1,7 +1,0 @@
-## YAML Template.
----
-message: Hello %s! You are learning %s!
-defaultText1: Ryan
-defaultText2: Dropwizard
-server:
-  applicationContextPath: /application
