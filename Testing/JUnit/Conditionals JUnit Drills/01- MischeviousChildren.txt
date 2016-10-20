@@ -1,0 +1,35 @@
+We have two children, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble. 
+
+AreWeInTrouble(true, true) -> true
+AreWeInTrouble(false, false) -> true
+AreWeInTrouble(true, false) -> false
+
+public boolean AreWeInTrouble(boolean aSmile, boolean bSmile) {
+  if ((aSmile == true && bSmile == true) || (aSmile == false && bSmile == false)) {
+  	return true;
+  } else {
+  	return false;
+  }
+}
+
+public void AreWeInTroubleTest() {
+	boolean a = true;
+	boolean b = true;
+
+	boolean result = AreWeInTrouble(a, b);
+
+	assertTrue(result);
+
+	a = false;
+	b = false;
+
+	result = AreWeInTrouble(a, b);
+
+	assertTrue(result);
+
+	a = true;
+
+	result = AreWeInTrouble(a, b);
+
+	assertFalse(result);
+}

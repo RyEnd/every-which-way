@@ -1,0 +1,39 @@
+Given an array of ints, return true if the array is length 1 or more, and the first element and the last element are equal. 
+
+SameFirstLast({1, 2, 3}) -> false
+SameFirstLast({1, 2, 3, 1}) -> true
+SameFirstLast({1, 2, 1}) -> true
+
+public boolean SameFirstLast(int[] numbers) {
+	if (numbers.size() < 1){
+		return false;
+	} else if (numbers[0] != numbers[numbers.size()]) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+public void SameFirstLastTest() {
+	int[] numbers = {1, 2, 3};
+	boolean result = SameFirstLast(numbers);
+
+	assertFalse(result);
+
+	numbers = {1, 2, 3, 1};
+	result = SameFirstLast(numbers);
+
+	assertTrue(result);
+
+	numbers = {1, 2, 1};
+	result = SameFirstLast(numbers);
+
+	assertTrue(result);
+}
+
+public void SameFirstLastSingleItemTest() {
+	int[] number = {1};
+	boolean result = SameFirstLast(number);
+
+	assertFalse(result);
+}

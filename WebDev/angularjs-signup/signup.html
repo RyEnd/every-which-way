@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs//1.4.8/angular.min.js"></script>
+    <style>
+        input.ng-invalid:not(.ng-pristine) {
+            box-shadow: 0px 0px 13px rgba(255, 133, 0, 0.9);
+            background-color: lightcoral;
+        }
+        .error-message {
+            padding: 12px;
+            background-color: rgba(255, 133, 0, 0.1);
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <script src="signup.js"></script>
+        <div ng-app="myApp" 
+             ng-controller="myCtrl">
+            <h1 ng-click="clearForm()">Clear</h1>
+            <h3 ng-click="resetForm()">Reset</h3>
+            <form name="form" novalidate>
+                First Name: <input type="text" 
+                                   name="firstName" 
+                                   ng-model="firstName"/><br>
+                Last Name: <input type="text" 
+                                  name="lastName" 
+                                  ng-model="lastName"/><br>
+                <br>
+                Full Name: {{firstName + " " + lastName}}
+                <br>
+                Username: <input type="text" 
+                                 name="username" 
+                                 required pattern=".{2,}" 
+                                 ng-model="username" 
+                                 ng-model-options="{ updateOn: 'blur' }"/>
+                <div class="error-message"
+                     ng-show="form.name$invalid && !form.name.$pristine">
+                    Username must be at least 2 characters.
+                </div>
+                <br>
+                Email: <input type="email" 
+                              name="address" 
+                              required type="email" 
+                              ng-model="email"
+                              ng-model-options="{ updateOn: 'blur' }"/>
+                <span ng-show="form.address.$error.email">Not a valid 
+                Email address</span>
+                <div class="error-message"
+                     ng-show="form.email.$invalid && !form.email.$pristine">
+                    Must be valid Email address.
+                </div>
+                <br>
+                Password: <input type="password" 
+                                 name="password"
+                                 required type="password"
+                                 pattern=".{2,}" 
+                                 ng-model="password"
+                                 ng-model-options="{ updateOn: 'blur' }"/>
+                <div class="error-message"
+                     ng-show="form.password.$invalid && !form.password.$pristine">
+                    Password must be at least 2 characters long.
+                </div>
+                <br>
+                Re Enter Password: <input type="password" 
+                                          name="secondPassword" 
+                                          required pattern=".{2,}" 
+                                          ng-model="secondPassword" 
+                                          wj-valid="password == secondPassword" />
+                <div class="error-message"
+                     ng-show="form.check.$invalid && !form.check$pristine">
+                    Sorry, the passwords don't match.
+                </div>
+            </form>
+            <p>Enter your e-mail address in the input field. AngularJS will display an error message if the address is not an e-mail.</p>
+            <button type="submit" ng-disabled="form.$invalid">Create Account</button>
+            <br>
+            <div ng-controller="namesCtrl">
+                <p><input type="text" ng-model="test"></p>
+                <ul>
+                    <li ng-repeat="x in names | filter : test">
+                        {{ x }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

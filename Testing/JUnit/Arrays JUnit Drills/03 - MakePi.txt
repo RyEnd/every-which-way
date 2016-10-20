@@ -1,0 +1,33 @@
+Return an int array length n containing the first n digits of pi.
+
+MakePi(3) -> {3, 1, 4}
+
+public int[] MakePi(int n) {
+	double pi = Math.PI;
+	if (n <=0){
+		System.out.Println("no");
+		return new int[0];
+	} else {
+		int[] digitsOfPi = new int[n];
+		for (int i = 0; i < n; i++){
+			digitsOfPi[i] = getNthDigit(pi, 10, n);
+		}
+	}
+	return digitsOfPi;
+}
+
+public getNthDigit(int number, int base, int n) {
+	return (int) ((number / Math.pow(base, n - 1)) % base);
+}
+
+public void MakePiTest() {
+	int[] expected = {3, 1, 4};
+	int[] result = MakePi(3);
+	assertEquals(expected, result);
+}
+
+public void MakeNoPiTest(){
+	int[] expected = new int[0];
+	int[] result = MakePi(-2);
+	assertEquals(expected, result);
+}
