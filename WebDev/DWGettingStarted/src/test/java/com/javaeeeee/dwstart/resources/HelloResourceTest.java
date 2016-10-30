@@ -1,5 +1,6 @@
 package com.javaeeeee.dwstart.resources;
 
+import com.ryanmolnar.DWGettingStarted.resources.HelloResource;
 import io.dropwizard.testing.junit.ResourceTestRule;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Invocation;
